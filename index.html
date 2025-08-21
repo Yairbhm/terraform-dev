@@ -2,26 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Facebook Login Replica</title>
+
+  <title>Bundle de Juegos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="left-panel">
-      <h1>facebook</h1>
-      <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
-    </div>
-    <div class="right-panel">
-      <form id="login-form">
-        <input type="text" placeholder="Correo electrónico o número de teléfono" required>
-        <input type="password" placeholder="Contraseña" required>
-        <button type="submit">Iniciar sesión</button>
-        <a class="forgot" href="#">¿Olvidaste tu contraseña?</a>
-        <div class="divider"></div>
-        <button type="button" class="create-account">Crear cuenta nueva</button>
-      </form>
-      <p class="create-page"><strong>Crea una página</strong> para una celebridad, una marca o un negocio.</p>
-    </div>
+  <div class="bundle-container">
+    <section class="games-section">
+      <h1>Tenientes Bundle</h1>
+      <h2>Paga al menos 12 $ por estos 6 artículos</h2>
+      <div class="game-list">
+        <div class="bundle-game">
+          <img src="https://via.placeholder.com/150x200?text=Gotham+Knights" alt="Gotham Knights">
+          <div>
+            <h3>Gotham Knights</h3>
+            <p>Aventuras en la ciudad de Gotham.</p>
+          </div>
+        </div>
+        <div class="bundle-game">
+          <img src="https://via.placeholder.com/150x200?text=Back+4+Blood" alt="Back 4 Blood">
+          <div>
+            <h3>Back 4 Blood</h3>
+            <p>Acción cooperativa contra hordas de zombis.</p>
+          </div>
+        </div>
+        <div class="bundle-game">
+          <img src="https://via.placeholder.com/150x200?text=Mortal+Kombat+11" alt="Mortal Kombat 11">
+          <div>
+            <h3>Mortal Kombat 11 Ultimate</h3>
+            <p>Lucha brutal con gráficos impresionantes.</p>
+          </div>
+        </div>
+        <div class="bundle-game">
+          <img src="https://via.placeholder.com/150x200?text=Shadow+of+War" alt="Shadow of War">
+          <div>
+            <h3>Shadow of War</h3>
+            <p>Batallas épicas en la Tierra Media.</p>
+          </div>
+        </div>
+        <div class="bundle-game">
+          <img src="https://via.placeholder.com/150x200?text=Arkham+Knight" alt="Batman: Arkham Knight">
+          <div>
+            <h3>Batman: Arkham Knight</h3>
+            <p>Defiende Gotham en tu Batimóvil.</p>
+          </div>
+        </div>
+        <div class="bundle-game">
+          <img src="https://via.placeholder.com/150x200?text=Otro+Juego" alt="Otro juego">
+          <div>
+            <h3>Otro juego</h3>
+            <p>Descripción breve del juego.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="payment-section">
+      <h2>Valor $60 - Paga lo que quieras</h2>
+      <p>Elige un monto para apoyar a la caridad.</p>
+      <div class="tiers">
+        <button class="tier-btn" data-amount="5">$5</button>
+        <button class="tier-btn" data-amount="10">$10</button>
+        <button class="tier-btn" data-amount="20">$20</button>
+      </div>
+      <input type="number" id="customAmount" placeholder="Otro monto" min="1">
+      <button id="orderBtn">Realizar pedido</button>
+      <p id="summary" class="summary"></p>
+    </aside>
   </div>
   <script src="script.js"></script>
 </body>

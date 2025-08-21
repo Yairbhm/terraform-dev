@@ -1,4 +1,128 @@
 body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #e0e0e0;
+}
+
+.bundle-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.games-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.bundle-game {
+  display: flex;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s forwards;
+}
+
+.bundle-game:nth-child(1) { animation-delay: 0.1s; }
+.bundle-game:nth-child(2) { animation-delay: 0.2s; }
+.bundle-game:nth-child(3) { animation-delay: 0.3s; }
+.bundle-game:nth-child(4) { animation-delay: 0.4s; }
+.bundle-game:nth-child(5) { animation-delay: 0.5s; }
+.bundle-game:nth-child(6) { animation-delay: 0.6s; }
+
+.bundle-game img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.bundle-game div {
+  padding: 10px;
+}
+
+.payment-section {
+  flex: 1;
+  background-color: #232a31;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.tiers {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tier-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #3b4754;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tier-btn:hover {
+  background-color: #4f6276;
+}
+
+.tier-btn.active {
+  background-color: #00bcd4;
+  color: #1b1b1b;
+}
+
+#customAmount {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #3b4754;
+  background-color: #1b1b1b;
+  color: #e0e0e0;
+}
+
+#orderBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 4px;
+  color: #1b1b1b;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#orderBtn:hover {
+  background-color: #26c6da;
+}
+
+.summary {
+  margin-top: 10px;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+=======
   background-color: #f0f2f5;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
@@ -85,5 +209,5 @@ form .forgot {
 .create-page {
   text-align: center;
   font-size: 14px;
-  margin-top: 28px;
+
 }

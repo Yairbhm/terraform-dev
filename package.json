@@ -1,0 +1,16 @@
+{
+  "name": "terraform-dev",
+  "version": "1.0.0",
+  "description": "Example project with a Node.js game bundle page and pay-what-you-want tiers served with Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node -e \"console.log('No tests configured')\""
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
