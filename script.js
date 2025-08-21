@@ -1,3 +1,4 @@
+
 const summary = document.getElementById('summary');
 let selectedAmount = '';
 
@@ -31,4 +32,5 @@ document.getElementById('orderBtn').addEventListener('click', () => {
     return;
   }
   alert(`Gracias por tu pago de $${selectedAmount}!`);
+
 });
